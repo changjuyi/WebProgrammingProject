@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>112-1 NTUT Hotel </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!--================Header Area =================-->
+    <header class="header_area">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="{{url_for('home')}}">Hello World Hotel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">Home</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('booking')}}">Book</a></li> 
+                        <li class="nav-item active"><a class="nav-link" href="{{url_for('accomodation')}}">Accomodation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('gallery')}}">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+    </header>
+    <!--================Header Area =================-->
+
+       <!--================ Accomodation Area  =================-->
+       <section class="accomodation_area section_gap">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_color">Hotel Accomodation</h2>
+                <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="singleroom.jpg" alt="Single Room" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('singleroom')}}"><h4 class="sec_h4">Single Room</h4></a>
+                        <h5>$1000<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="doubleroom.jpg" alt=" Double Room" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('doubleroom')}}"><h4 class="sec_h4">Double Room</h4></a>
+                        <h5>$2000<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="honeymoon.jpg" alt="Honey Moon" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('honeymoon')}}"><h4 class="sec_h4">Honeymoon Suit</h4></a>
+                        <h5>$7500<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="deluxeroom.jpg" alt="Deluxe Room" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('deluxeroom')}}"><h4 class="sec_h4">Deluxe Room</h4></a>
+                        <h5>$5000<small>/night</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Accomodation Area  =================-->
+    <!--================Booking Tabel Area =================-->
+    <section class="hotel_booking_area">
+        <div class="container">
+            <div class="row hotel_booking_table">
+                <div class="col-md-3">
+                    <h2>Book<br> Your Room</h2>
+                </div>
+                <div class="container">
+                    <a href="{{ url_for('booking') }}" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Booking Tabel Area  =================-->
+    <!--================ Accomodation Area  =================-->
+    <section class="accomodation_area section_gap">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_color">Hotel Accomodation</h2>
+                <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="singleroom.jpg" alt="Single Room" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('singleroom')}}"><h4 class="sec_h4">Single Room</h4></a>
+                        <h5>$1000<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="doubleroom.jpg" alt=" Double Room" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('doubleroom')}}"><h4 class="sec_h4">Double Room</h4></a>
+                        <h5>$2000<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="honeymoon.jpg" alt="Honey Moon" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('honeymoon')}}"><h4 class="sec_h4">Honeymoon Suit</h4></a>
+                        <h5>$7500<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="deluxeroom.jpg" alt="Deluxe Room" width="250" height="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('deluxeroom')}}"><h4 class="sec_h4">Deluxe Room</h4></a>
+                        <h5>$5000<small>/night</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Accomodation Area  =================-->
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

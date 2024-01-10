@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>112-1 NTUT Hotel </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!--================Header Area =================-->
+    <header class="header_area">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="{{url_for('home')}}">Hello World Hotel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="{{url_for('home')}}">Home</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('booking')}}">Book</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('accomodation')}}">Accomodation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('gallery')}}">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+    </header>
+    <!--================Header Area =================-->
+    <!--================Banner Area =================-->
+    <section class="banner_area">
+        <div class="booking_table d_flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h6>Away from monotonous life</h6>
+                    <h2>Relax Your Mind</h2>
+                    <p>If you are looking at blank cassettes on the web, you may be very confused at the<br> difference in price. You may see some for as low as $.17 each.</p>
+                    <a href="#" class="btn theme_btn button_hover">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="hotel_booking_area position">
+            <div class="container">
+                <div class="hotel_booking_table">
+                    <div class="col-md-3">
+                        <h2>Book<br> Your Room</h2>
+                    </div>
+                    <div class="container">
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Banner Area =================-->
+     <!--================ Accomodation Area  =================-->
+     <section class="accomodation_area section_gap">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_color">Hotel Accomodation</h2>
+                <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="singleroom.jpg" alt="Single Room" height="250" width="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('singleroom')}}"><h4 class="sec_h4">Single Room</h4></a>
+                        <h5>$1000<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="doubleroom.jpg" alt=" Double Room" height="250" width="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('doubleroom')}}"><h4 class="sec_h4">Double Room</h4></a>
+                        <h5>$2000<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="honeymoon.jpg" alt="Honey Moon" height="250" width="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('honeymoon')}}"><h4 class="sec_h4">Honeymoon Suit</h4></a>
+                        <h5>$7500<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="deluxeroom.jpg" alt="Deluxe Room" height="250" width="250">
+                            <a href="{{ url_for('booking') }}" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <a href="{{url_for('deluxeroom')}}"><h4 class="sec_h4">Deluxe Room</h4></a>
+                        <h5>$5000<small>/night</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Accomodation Area  =================-->
+    <!--================ Facilities Area  =================-->
+    <section class="facilities_area section_gap">
+        <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
+        </div>
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_w">Hotel Facilities</h2>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
+                        <p>Restaurant</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+                        <p>Sports CLub</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
+                        <p>Swimming Pool</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                        <p>Rent a Car</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+                        <p>Gymnesium</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
+                        <p>Bar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Facilities Area  =================-->
+    <!--================ About History Area  =================-->
+    <section class="about_history_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d_flex align-items-center">
+                    <div class="about_content ">
+                        <h2 class="title title_color">About Us<br>Our History<br>Mission & Vision</h2>
+                        <p>112-1 Web Programming Final</p>
+                        <!--
+                            <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
+                        -->                      
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="image/about_bg.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ About History Area  =================-->
+    
+    </body>
+</body>
+</html>
+
+
